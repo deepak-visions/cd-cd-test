@@ -1,12 +1,9 @@
-name: Build on PR
+name: Build on Push
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
-      - main
+      - "**"
 
 jobs:
   build:
